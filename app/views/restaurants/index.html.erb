@@ -1,0 +1,25 @@
+<h2>RESTAURANTS</h2>
+
+<ul>
+    <% @restaurants.each do |restaurant| %>
+        <li>
+            <%#= link_to restaurant.title, restaurant_path(restaurant.id) %>
+            <%= link_to restaurant.name, restaurant_path(restaurant) %>
+
+            <%#= link_to "Laundry", "/restaurants/1" %>
+        </li>
+    <% end %>
+</ul>
+
+<%= link_to "Create restaurant", new_restaurant_path %>
+<%#= link_to "Create restaurant", "/restaurants/new" %>
+
+
+<%# link_to "text do link", url %>
+<%#= link_to "Go to link", "https://www.google.com" %>
+
+
+<%# fazer isso... %>
+<%#= link_to "Go to index", restaurants_path %>
+<%# ...é igual que fazer isso %>
+<%#= link_to "Go to index", "/restaurants" %>
